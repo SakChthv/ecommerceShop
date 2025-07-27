@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@100..900&family=Noto+Serif+Lao:wght@100..900&display=swap");
+@import "tailwindcss";
+* {
+  font-family: "Noto Sans Lao Looped", sans-serif;
+  /* margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; */
+}
+
+body {
+  background: #f5f0f0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.bg-org {
+  background: #ff5252;
+}
+
+.links:hover {
+  color: #ff5252;
+}
+
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
+}

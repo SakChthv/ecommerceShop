@@ -1,0 +1,4 @@
+.searchBox input::placeholder,
+.searchBox input::-moz-placeholder {
+  color: #373737 !important;
+}
