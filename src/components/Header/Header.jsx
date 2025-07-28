@@ -66,12 +66,12 @@ const Header = () => {
       </div>
       <div className="header py-4 border-t-[1px] border-b-[1px] border-gray-100">
         <div className="container flex items-center justify-between">
-          <div className="col1 w-[15%]">
+          <div className="col1 w-[20%]">
             <Link to={"/"}>
               <img src="../assets/logo/logo.png" className="w-30" alt="Logo" />
             </Link>
           </div>
-          <div className="col2 w-[45%]">
+          <div className="col2 w-[40%]">
             <Search />
           </div>
           <div className="col3 w-[40%] flex items-center pl-7">

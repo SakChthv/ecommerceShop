@@ -8,6 +8,7 @@
 }
 
 body {
+  font-family: "Noto Sans Lao Looped", sans-serif;
   background: #f5f0f0;
 }
 .container {
@@ -25,4 +26,21 @@ body {
 
 .MuiBadge-badge {
   background-color: #ff5252 !important;
+}
+
+nav button {
+  font-family: "Noto Sans Lao Looped", sans-serif !important;
+  color: black !important;
+}
+
+button {
+  font-family: "Noto Sans Lao Looped", sans-serif !important;
+}
+
+button:hover {
+  color: #ff5252 !important;
+}
+
+nav ul button:hover .MuiTouchRipple-root {
+  background: rgba(0, 0, 0, 0.1) !important;
 }
