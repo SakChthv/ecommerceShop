@@ -10,6 +10,7 @@
 body {
   font-family: "Noto Sans Lao Looped", sans-serif;
   background: #f5f0f0;
+  overflow-x: hidden;
 }
 .container {
   width: 90%;
@@ -24,6 +25,7 @@ body {
   color: #ff5252;
 }
 
+/* Cart and wishList */
 .MuiBadge-badge {
   background-color: #ff5252 !important;
 }
@@ -43,4 +45,58 @@ button:hover {
 
 nav ul button:hover .MuiTouchRipple-root {
   background: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Slider */
+
+.sliderHome {
+  overflow: inherit !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+  color: #000;
+}
+
+/* Home Category Slider */
+.homeCatSlider {
+  overflow: inherit !important;
+}
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+.homeCatSlider .item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.homeCatSlider .swiper-button-prev::after,
+.homeCatSlider .swiper-button-next::after {
+  font-size: 16px !important;
+}
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
+  background: #ff5252 !important;
+}
+.homeCatSlider .swiper-button-prev:hover::after,
+.homeCatSlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+.homeCatSlider .item:hover img {
+  transform: scale(1.1);
 }

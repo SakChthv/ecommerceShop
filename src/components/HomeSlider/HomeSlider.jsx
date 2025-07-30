@@ -7,36 +7,54 @@ import { Navigation } from "swiper/modules";
 
 function HomeSlider() {
   return (
-    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-      <SwiperSlide>
-        <img
-          src="../assets/banners/banner1.png"
-          alt="banner"
-          className="w-full"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img
-          src="../assets/banners/banner2.png"
-          alt="banner1"
-          className="w-full"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img
-          src="../assets/banners/banner3.png"
-          alt="banner2"
-          className="w-full"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img
-          src="../assets/banners/banner4.png"
-          alt="banner3"
-          className="w-full"
-        />
-      </SwiperSlide>
-    </Swiper>
+    <div className="homeSlider py-3">
+      <div className="container">
+        <Swiper
+          spaceBetween={15}
+          navigation={true}
+          modules={[Navigation]}
+          className="sliderHome"
+        >
+          <SwiperSlide>
+            <div className="item rounded-[25px] overflow-hidden">
+              <img
+                src="../assets/banners/banner1.png"
+                alt="banner"
+                className="w-full"
+              />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="item rounded-[25px] overflow-hidden">
+              <img
+                src="../assets/banners/banner3.png"
+                alt="banner1"
+                className="w-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="item rounded-[25px] overflow-hidden">
+              <img
+                src="../assets/banners/banner1.png"
+                alt="banner2"
+                className="w-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="item rounded-[25px] overflow-hidden">
+              <img
+                src="../assets/banners/banner3.png"
+                alt="banner3"
+                className="w-full"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
   );
 }
 
