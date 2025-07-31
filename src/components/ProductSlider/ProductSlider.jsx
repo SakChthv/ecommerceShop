@@ -1,0 +1,48 @@
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Navigation } from "swiper/modules";
+import ProductItem from "../ProductItem/ProductItem";
+
+const ProductSlider = (props) => {
+  return (
+    <div className="productSlider py-3">
+      <Swiper
+        slidesPerView={props.item}
+        spaceBetween={15}
+        navigation={true}
+        modules={[Navigation]}
+        className="productSlider"
+      >
+        <SwiperSlide>
+          <ProductItem />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductItem />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductItem />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductItem />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductItem />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductItem />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductItem />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductItem />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+};
+
+export default ProductSlider;

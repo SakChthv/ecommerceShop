@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
 const HomeCatSlider = () => {
   return (
-    <div className="homeCatSlider">
+    <div className="homeCatSlider pt-4 py-8">
       <div className="container">
         <Swiper
           slidesPerView={7}

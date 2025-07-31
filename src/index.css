@@ -2,9 +2,6 @@
 @import "tailwindcss";
 * {
   font-family: "Noto Sans Lao Looped", sans-serif;
-  /* margin: 0px;
-  padding: 0px;
-  box-sizing: border-box; */
 }
 
 body {
@@ -23,6 +20,17 @@ body {
 
 .links:hover {
   color: #ff5252;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-slider-thumb {
+  background: #ccc;
+}
+::-webkit-slider-track {
+  background: #fff;
 }
 
 /* Cart and wishList */
@@ -72,6 +80,20 @@ nav ul button:hover .MuiTouchRipple-root {
   color: #000;
 }
 
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55px !important;
+}
+
+.smlBtn .swiper-button-prev::after,
+.smlBtn .swiper-button-next::after {
+  font-size: 16px !important;
+  color: #000;
+}
+
 /* Home Category Slider */
 .homeCatSlider {
   overflow: inherit !important;
@@ -99,4 +121,19 @@ nav ul button:hover .MuiTouchRipple-root {
 }
 .homeCatSlider .item:hover img {
   transform: scale(1.1);
+}
+
+/* Tab Popular product */
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+.Mui-selected {
+  color: #ff5252 !important;
+}
+
+/* Product Slider */
+.productSlider .swiper-wrapper {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
